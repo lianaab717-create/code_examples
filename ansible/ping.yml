@@ -1,0 +1,9 @@
+- name: Check servers connectivity
+  hosts: servers
+  gather_facts: no
+  tasks:
+    - name: Ping servers
+      ansible.builtin.ping:
+
+
+# ansible-playbook -i inventory.ini ping.yml
